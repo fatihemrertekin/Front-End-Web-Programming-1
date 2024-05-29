@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* fonts */
+
+.title-font {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 35px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* color */
+.text-warning {
+  color: #ffc10e !important;
+}
+
+.btn-warning {
+  background-color: #ffc30e !important;
+  transition: box-shadow 0.3s ease;
+}
+
+.btn-warning:hover {
+  box-shadow: #ffebafc2 0px 1px 10px;
+}
+
+.bg-color-badge {
+  background-color: transparent !important;
+}
+
+/* HEADER */
+
+/* navbar */
+
+.navbar {
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+/* for the js code */
+#navbar.scrolled {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Opacity değerini istediğiniz gibi ayarlayabilirsiniz */
+}
+
+.navbar .dropdown a {
+  font-size: 0.9rem;
+}
+
+.navbar .navbar-toggler-icon {
+  color: white;
+}
+
+.dropdown .dropdown-menu {
+  background-color: whitesmoke;
+  position: absolute;
+  left: -16px;
+  top: 45px;
+  border-radius: 0.2rem;
+  text-align: center;
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+  transition: all 0.2s ease;
+  color: #525252;
+}
+
+.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #e1e1e1;
+}
+
+@media (max-width: 992px) {
+  .navbar .dropdown {
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  .navbar .dropdown a {
+    font-size: 16px !important;
+  }
+}
+
+/* carousel */
+
+.carousel .carousel-inner {
+  position: relative;
+}
+
+.carousel .carousel-inner img {
+  object-fit: cover;
+  background-position: center;
+}
+
+.carousel .carousel-caption {
+  position: absolute;
+  top: 45%;
+}
+
+@media (max-width: 767.98px) {
+  #carousel-slider .carousel-control-prev,
+  #carousel-slider .carousel-control-next {
+    visibility: hidden !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .carousel .carousel-inner img {
+    height: 50vh !important;
+  }
+
+  .carousel .carousel-caption {
+    top: 37%;
+  }
+}
+
+/* cards-section */
+
+.cards-section .card {
+  height: 400px;
+  position: relative;
+  transition: transform 0.2s ease;
+  background-position: center;
+  background-size: cover;
+}
+
+.cards-section .card:hover {
+  transform: translateY(-10px);
+}
+
+.cards-section .card-body {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cards-section .border-line {
+  width: 100px;
+  border-bottom: 1px solid #ffc107;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.cards-section .services {
+  color: #595656ad;
+}
+
+.card-buttons {
+  transform: translateY(343px);
+}
+
+.card-buttons button {
+  color: rgba(255, 255, 255, 0.853) !important;
+}
+
+/* trips-section */
+
+.trips-card1 {
+  background-image: url(vendor/img/trips/amasya.jpg);
+}
+
+.trips-card2 {
+  background-image: url(vendor/img/trips/fethiye.jpg);
+}
+
+.trips-card3 {
+  background-image: url(vendor/img/trips/istanbul.jpg);
+}
+
+.trips-card4 {
+  background-image: url(vendor/img/trips/izmir.jpg);
+}
+
+.trips-card5 {
+  background-image: url(vendor/img/trips/mardin.jpg);
+}
+
+.trips-card6 {
+  background-image: url(vendor/img/trips/paris.jpg);
+}
+
+/* hotels-section */
+
+.hotels-card1 {
+  background-image: url(vendor/img/hotels/aqua1.png);
+}
+
+.hotels-card2 {
+  background-image: url(vendor/img/hotels/fethiye1.png);
+}
+
+.hotels-card3 {
+  background-image: url(vendor/img/hotels/mardius1.png);
+}
+
+.hotels-card4 {
+  background-image: url(vendor/img/hotels/royal1.png);
+}
+
+.hotels-card5 {
+  background-image: url(vendor/img/hotels/swis1.png);
+}
+
+.hotels-card6 {
+  background-image: url(vendor/img/hotels/villam1.png);
+}
+
+/* transporters-section */
+
+.transporters-card1 {
+  background-image: url(vendor/img/portfolio/aston.jpg);
+}
+
+.transporters-card2 {
+  background-image: url(vendor/img/portfolio/bentley.jpg);
+}
+
+.transporters-card3 {
+  background-image: url(vendor/img/portfolio/ferrari.jpg);
+}
+
+.transporters-card4 {
+  background-image: url(vendor/img/portfolio/jeep.jpg);
+}
+
+.transporters-card5 {
+  background-image: url(vendor/img/portfolio/koenigsegg.jpg);
+}
+
+.transporters-card6 {
+  background-image: url(vendor/img/portfolio/tesla.jpg);
+}
+
+/* footer */
+
+#footer {
+  background-color: #151515;
+}
+
+#footer #our_services ul li {
+  transition: transform 0.3s ease-in-out;
+}
+
+#footer #our_services ul li:hover {
+  transform: translateX(5px);
+}
+
+/* back-to-top */
+
+#back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1030;
+}
+
+/* for the js code */
+
+#back-to-top-btn {
+  background-color: rgb(
+    240,
+    240,
+    240,
+    0
+  ); /* Opacity değerini istediğiniz gibi ayarlayabilirsiniz */
+  color: transparent;
+  transition: all 0.3s ease;
+}
+
+#back-to-top-btn.scrolled {
+  background-color: rgb(
+    255,
+    195,
+    14,
+    1
+  ); /* Opacity değerini istediğiniz gibi ayarlayabilirsiniz */
+  color: white;
+}
+
+/* wp icon */
+
+#wp-icon {
+  position: fixed;
+  left: 20px;
+  bottom: 10px;
+  z-index: 1030;
+}
+
+#wp-icon i {
+  font-size: 30px;
+  color: rgb(255, 195, 14, 1);
+}
+
+/* trips-details-sections */
+.trip-details-section p {
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .trip-details-section .iframe {
+    height: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .trip-details-section .iframe {
+    height: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .trip-details-section .iframe {
+    height: 400px;
+  }
+}
